@@ -42,6 +42,12 @@ dependencies:
   objectbox_flutter_libs: any
   flutter_svg: ^2.0.9
   flutter_screenutil: ^5.9.0
+  image_picker: ^1.0.7
+  file_picker: ^6.1.1
+  open_file: ^3.3.2
+  share_plus: ^7.2.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
 
 
 dev_dependencies:
@@ -54,8 +60,6 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
-  hive: any
-  hive_flutter: any
   build_runner: ^2.4.8
   objectbox_generator: ^2.4.0
 

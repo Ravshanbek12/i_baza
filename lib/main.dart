@@ -4,11 +4,14 @@ import 'package:i_baza/core/database/objectbox.dart';
 import 'package:i_baza/core/injector/setup_locater.dart';
 import 'package:i_baza/core/injector/storage_repository.dart';
 import 'package:i_baza/core/routs/app_routs.dart';
-import 'package:i_baza/features/splash/presentation/splash.dart';
-
 import 'core/adapter/hive_type_adapter.dart';
+import 'package:hive/hive.dart';
+
+import 'package:hive_flutter/hive_flutter.dart';
 
 Future<void> main() async {
+  await Hive.initFlutter();
+  var box = await Hive.openBox("profile");
   WidgetsFlutterBinding.ensureInitialized();
   registerAdapters();
   await StorageRepository.getInstance();
